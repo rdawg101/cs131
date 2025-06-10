@@ -1,0 +1,21 @@
+
+Task #1: Home Directory Path
+pwd >> cs131/a1/a1.txt
+
+
+Task #2: Files Containing Mem & CPU Information
+ls /proc | grep mem >> a1.txt
+ls /proc | grep cpu >> a1.txt
+
+
+Task #3: OS Version & Info Location
+lsb_release -a >> a1.txt
+ls /etc | grep release >> a1.txt
+
+
+Task #4 Taxi Dataset
+Task #4A: Most Popular Pickup Locations on April 2nd, 2019
+grep '^[^,]*,"2019-04-02' 2019-04.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -3 >> a1.txt
+
+Task #4B: Most Popular Pickup Locations on April 10th, 2019
+grep '^[^,]*,"2019-04-10' 2019-04.csv | cut -d',' -f8 | sort | uniq -c | sort -nr | head -3 >> a1.txt
