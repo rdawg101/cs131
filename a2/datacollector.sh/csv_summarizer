@@ -81,7 +81,7 @@ indexes=($(awk -F',' '{for(i=1;i<=NF;i++) print $i}' <<< "$input_indexes"))
                 }
             ' "$csv")
 
-            printf "| %-5s | %-18s | %s |\n" "$idx" "$feature" "$stats"
+            printf "| %-5s | %-18s | %s |\n" "$idx" "$feature" "${stats// / | }"
         done
 
         echo ""
