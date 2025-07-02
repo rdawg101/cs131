@@ -1,6 +1,6 @@
 # Data Collector: CSV Summarizer
 
-`csv_summarizer` is a Bash script for automatically downloading, extracting, and summarizing tabular datasets from the [UCI Machine Learning Respository](https://archive.ics.uci.edu/). It generates a clean `summary.md` report that includes feature listings and basic statistics (min, max, mean, standard deviation) for numerical columns.
+`datacollector.sh` is a Bash script for automatically downloading, extracting, and summarizing tabular datasets from the [UCI Machine Learning Respository](https://archive.ics.uci.edu/). It generates a clean `summary.md` report that includes feature listings and basic statistics (min, max, mean, standard deviation) for numerical columns.
 
 
 
@@ -20,10 +20,10 @@ Clone the assignment repository and navigate into the `cs131/a2/` directory:
 
 ```bash
 git clone https://github.com/rdawg101/cs131.git
-cd cs131/a2/datacollector.sh
+cd cs131/a2
 
 Make sure the script is executable by running the command:
-chmod +x csv_summarizer
+chmod +x datacollector.sh
 
 
 
@@ -32,7 +32,7 @@ chmod +x csv_summarizer
 
 Run the script with:
 
-./csv_summarizer
+./datacollector.sh
 
 
 You will be prompted to:
