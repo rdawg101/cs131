@@ -1,0 +1,3 @@
+# all commands relevant to executing all tasks
+
+awk -f grader.awk grades.csv

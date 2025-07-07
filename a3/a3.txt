@@ -1,0 +1,22 @@
+# output from awk cmnd from cmnd.log
+
+
+# prints the name of each student, their total score from all of their classes,
+# their average score, and status (passed or failed)
+# at the bottom of the student summary is the top and lowest scorers using each 
+# student's total score from their classes
+
+# David is the only student that has the status of "Fail"
+# Charlie has the highest average score (90.00) and David has the lowest average score (65.00)
+# Charlie is the top scorer (270) and David is the lowest scorer (195)
+
+Student Summary: 
+Alice      Total: 253 | Average: 84.33 | Status: Pass
+Charlie    Total: 270 | Average: 90.00 | Status: Pass
+Eve        Total: 265 | Average: 88.33 | Status: Pass
+Bob        Total: 246 | Average: 82.00 | Status: Pass
+David      Total: 195 | Average: 65.00 | Status: Fail
+
+Top Scorer: Charlie with a 270
+
+Lowest Scorer: David with a 195
